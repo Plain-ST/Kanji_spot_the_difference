@@ -26,6 +26,7 @@ function gameStart() {
           clearTimeout(timer);
           alert("Game Completed!!\nYour time is "+ eTime+" seconds");
           timer = null;
+          stage = 0;
           reset = 1;
         }else{
           while(cells.firstChild){
