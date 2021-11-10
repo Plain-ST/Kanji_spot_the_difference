@@ -13,8 +13,8 @@ const q = [
 const cells = document.getElementById("cells");
 const score = document.getElementById("time");
 let start = new Date();
-const correct = new Audio('sound/correct.mp3');
-const wrong = new Audio('sound/wrong.mp3');
+const correct = new Audio('./sound/correct.mp3');
+const wrong = new Audio('./sound/wrong.mp3');
 const max = 5;
 let stage = 0;
 let eTime;
