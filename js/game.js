@@ -27,8 +27,8 @@ function gameStart() {
             cells.removeChild(cells.firstChild);
           }
           clearTimeout(timer);
-          Save_score(eTime);
           alert("Game Completed!!\nYour time is "+ eTime+" seconds");
+          Save_score(eTime);
           timer = null;
           stage = 0;
           reset = 1;
