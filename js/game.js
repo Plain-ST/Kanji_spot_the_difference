@@ -23,7 +23,11 @@ function gameStart() {
       if(this.textContent ==q[qNum][1]){
         correct.play();
         if(stage == max){
+          while(cells.firstChild){
+            cells.removeChild(cells.firstChild);
+          }
           clearTimeout(timer);
+          Save_score(eTime);
           alert("Game Completed!!\nYour time is "+ eTime+" seconds");
           timer = null;
           stage = 0;
